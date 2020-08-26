@@ -1,0 +1,6 @@
+language: minimal
+dist: xenial
+install:
+    - wget -qO- --retry-connrefused https://storage.googleapis.com/matlabimagesus/public/install.sh | sudo -E bash
+    - git clone https://github.com/spinw/spinw.git
+script: matlab -batch "addpath(genpath('spinw')); run runspinwFunctionalityTests.m"

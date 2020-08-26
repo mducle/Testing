@@ -1,7 +1,6 @@
 name: Run SpinW tests
 
 on:
-  push:
 
 jobs:
   test:
